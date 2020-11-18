@@ -15,6 +15,7 @@ public class Basket extends Actor
     public void act() 
     {
         move();
+        checkCollision();
     }    
     
     private void move() {
@@ -26,4 +27,29 @@ public class Basket extends Actor
         if (Greenfoot.isKeyDown("D")) 
             setLocation(getX() + moveSpeed, getY());
     }
+    
+    private void checkCollision()
+    {
+        if (isTouching(Apple.class)) 
+        {
+            removeTouching(Apple.class);
+        }
+        if (isTouching(BadLemon.class)) 
+        {
+            removeTouching(BadLemon.class);
+        }
+        if (isTouching(Banana.class)) 
+        {
+            removeTouching(Banana.class);
+        }
+        if (isTouching(Bomb.class)) 
+        {
+            removeTouching(Bomb.class);
+        }
+        if (isTouching(Cherry.class)) 
+        {
+            removeTouching(Cherry.class);
+        }
+    }
 }
+    

@@ -18,6 +18,10 @@ public class Tree extends World
     {    
         super(640, 480, 1); 
         prepare();
+        score = 0;
+        lives = 0;
+        showScore();
+        showLives();
     }
     
     /**
@@ -49,5 +53,14 @@ public class Tree extends World
     {
         Basket basket = new Basket();
         addObject(basket,70,400);
+    }
+    
+    private void showScore()
+    {
+        showText("Score: " + score, 80, 25);
+    }
+    private void showLives()
+    {
+        showText("Lives: " + lives, 520, 25);
     }
 }
