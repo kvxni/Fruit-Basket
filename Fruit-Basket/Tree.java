@@ -1,10 +1,11 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * Write a description of class Tree here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Alex & Kevin 
+ * @version v1.0
  */
 public class Tree extends World
 {
@@ -19,7 +20,7 @@ public class Tree extends World
         super(640, 480, 1); 
         prepare();
         score = 0;
-        lives = 0;
+        lives = 10;
         showScore();
         showLives();
     }
@@ -29,19 +30,19 @@ public class Tree extends World
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() {
-        if (Greenfoot.getRandomNumber(170) < 1)
+        if (Greenfoot.getRandomNumber(150) < 1)
             addObject(new Apple(), Greenfoot.getRandomNumber(640), 1);
             
-        if (Greenfoot.getRandomNumber(230) < 1)
+        if (Greenfoot.getRandomNumber(200) < 1)
             addObject(new Cherry(), Greenfoot.getRandomNumber(640), 1);
             
-        if (Greenfoot.getRandomNumber(160) < 1)
+        if (Greenfoot.getRandomNumber(140) < 1)
             addObject(new BadLemon(), Greenfoot.getRandomNumber(640), 1);
             
-        if (Greenfoot.getRandomNumber(180) < 1)
+        if (Greenfoot.getRandomNumber(150) < 1)
             addObject(new Banana(), Greenfoot.getRandomNumber(640), 1);
             
-        if (Greenfoot.getRandomNumber(150) < 1)
+        if (Greenfoot.getRandomNumber(120) < 1)
             addObject(new Bomb(), Greenfoot.getRandomNumber(640), 1);
     }
 
@@ -55,12 +56,31 @@ public class Tree extends World
         addObject(basket,70,400);
     }
     
+    public void addScore(int points) {
+        score += points;
+        showScore();
+    }
+    
+    public void loseLife(int life) {
+        lives -= life;
+        showLives();
+        if (lives <= 0) {
+            Greenfoot.stop();
+            showText("Game Over.", 320, 240);
+        }
+    }
+    
     private void showScore()
     {
-        showText("Score: " + score, 80, 25);
+        showText("Score: " + score, 44, 14);
     }
+    
     private void showLives()
     {
-        showText("Lives: " + lives, 520, 25);
+        showText("Lives: " + lives, 46, 34);
+    }
+    
+    public int getScore() {
+        return score;
     }
 }

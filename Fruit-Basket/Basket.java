@@ -32,23 +32,33 @@ public class Basket extends Actor
     {
         if (isTouching(Apple.class)) 
         {
+            Tree tree = (Tree)getWorld();
             removeTouching(Apple.class);
+            tree.addScore(20);
         }
         if (isTouching(BadLemon.class)) 
         {
+            Tree tree = (Tree)getWorld();
             removeTouching(BadLemon.class);
+            tree.loseLife(1);
         }
         if (isTouching(Banana.class)) 
         {
+            Tree tree = (Tree)getWorld();
             removeTouching(Banana.class);
+            tree.addScore(15);
         }
         if (isTouching(Bomb.class)) 
         {
+            Tree tree = (Tree)getWorld();
             removeTouching(Bomb.class);
+            tree.loseLife(2);
         }
         if (isTouching(Cherry.class)) 
         {
+            Tree tree = (Tree)getWorld();
             removeTouching(Cherry.class);
+            tree.addScore(10);
         }
     }
 }
