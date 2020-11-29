@@ -16,7 +16,6 @@ public class Banana extends Actor
     public void act() 
     {
         setLocation(getX(), getY() + speed);
-        difficultySpike();
         if (getY() == 479) {
             Tree tree = (Tree)getWorld();
             tree.removeObject(this);
@@ -29,15 +28,5 @@ public class Banana extends Actor
     
     public void setSpeed(int speed) {
         this.speed = speed;
-    }
-    
-    private void difficultySpike() {
-        int i = 200;
-        
-        Tree tree = (Tree)getWorld();
-        if (tree.getScore() / 100 >= i) {      
-            speed += 2;
-            i += 200;
-        }
     }
 }

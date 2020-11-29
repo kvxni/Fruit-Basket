@@ -26,7 +26,7 @@ public class Tree extends World
     }
     
     /**
-     * Act - do whatever the Banana wants to do. This method is called whenever
+     * Act - do whatever the Tree wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
@@ -57,11 +57,19 @@ public class Tree extends World
         addObject(basket,70,400);
     }
     
+    /**
+     * Adds points to the score.
+     * @params points The amount of points.
+     */
     public void addScore(int points) {
         score += points;
         showScore();
     }
     
+    /**
+     * Substracts life to the lives 
+     * @params life The amount of lives lost.
+     */
     public void loseLife(int life) {
         lives -= life;
         showLives();
@@ -71,16 +79,22 @@ public class Tree extends World
         }
     }
     
+    /**
+     * Displays the score.
+     */
     private void showScore()
     {
         showText("Score: " + score, 44, 14);
     }
     
+    /**
+     * Displays the lives.
+     */
     private void showLives()
     {
         showText("Lives: " + lives, 46, 34);
     }
-    
+
     public int getScore() {
         return score;
     }

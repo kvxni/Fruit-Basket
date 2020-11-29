@@ -17,7 +17,10 @@ public class Instructions extends Buttons
         intructionButton.drawString("Instructions",0,50);
         setImage(intructionButton);
     }
-    
+    /**
+     * Act - do whatever the Instructions wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() 
     {
         checkMouse();

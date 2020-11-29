@@ -9,22 +9,16 @@ public class Apple extends Actor
 {
     private int speed = 5;
     
+    /**
+     * Act - do whatever the Apple wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() 
     {
         setLocation(getX(), getY() + speed);
-        difficultySpike();
         if (getY() == 479) {
             Tree tree = (Tree)getWorld();
             tree.removeObject(this);
         }
     }    
-    
-    private void difficultySpike() {
-        int i = 100;
-        Tree tree = (Tree)getWorld();
-        if (tree.getScore() / 100 >= i) {      
-            speed += 10;
-            i += 100;
-        }
-    }
 }

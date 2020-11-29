@@ -8,6 +8,4 @@ comment2.params=
 comment2.target=int\ getSpeed()
 comment3.params=speed
 comment3.target=void\ setSpeed(int)
-comment4.params=
-comment4.target=void\ difficultySpike()
-numComments=5
+numComments=4

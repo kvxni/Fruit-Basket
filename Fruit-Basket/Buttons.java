@@ -3,14 +3,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Buttons here.
  * 
- * @author (your name) 
+ * @author Alex & Kevin
  * @version (a version number or a date)
  */
 public class Buttons extends Actor
 {
     private boolean mouseOver = false;
     private static int MAX_TRANS = 255;
-    
+
     public void checkMouse()
     {
         if(Greenfoot.mouseMoved(null))

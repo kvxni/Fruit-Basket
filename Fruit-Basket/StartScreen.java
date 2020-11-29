@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class StartScreen extends World
 {
-
+    
     /**
      * Constructor for objects of class StartScreen.
      * 
@@ -30,5 +30,4 @@ public class StartScreen extends World
         Credits credits = new Credits();
         addObject(credits,320,360);
     }
-    
 }

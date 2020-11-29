@@ -18,6 +18,9 @@ public class Basket extends Actor
         checkCollision();
     }    
     
+    /**
+     * Move the basket around with the keyboard.
+     */
     private void move() {
         int moveSpeed = 4;
         if (Greenfoot.isKeyDown("Shift"))
@@ -28,6 +31,9 @@ public class Basket extends Actor
             setLocation(getX() + moveSpeed, getY());
     }
     
+    /**
+     * Checks for contact with the basket.
+     */
     private void checkCollision()
     {
         if (isTouching(Apple.class)) 

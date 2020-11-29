@@ -17,7 +17,10 @@ public class Credits extends Buttons
         creditsButton.drawString("Credits",0,50);
         setImage(creditsButton);
     }
-    
+    /**
+     * Act - do whatever the Credits wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() 
     {
         checkMouse();
