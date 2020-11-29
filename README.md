@@ -9,6 +9,10 @@ Version 20201114
 
 Version 20201128
 	- Improved some assets
+	- Added title screen.
+	- Added intruction screen.
+	- Added credit screen.
+	- Added menu buttons.
 
 # Credits
 
