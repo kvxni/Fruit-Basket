@@ -2,6 +2,16 @@
 
 ## Fruit Basket is a game made for a Game Programming project.
 
+Version 20201206
+	- Improved assets
+		+ Replaced backgrounds with a sky
+		
+	- Added a grass border
+	- Added an instruction screen
+	- Added a credits screen
+	- Made the screen switching work
+	
+	
 Version 20201114
 	- Added a "basket."
 	- Added falling fruits and bomb.
@@ -33,4 +43,14 @@ Name by Another Rose https://opengameart.org/content/gardening-set
 Changes have been made:
 	- Descaled image
 	- Modified the basket a bit
+	
+	
+Grass image is public domain https://opengameart.org/content/grass-blades-alpha-card-texture-side-view
+
+
+Sky image by
+Santoniche https://opengameart.org/content/sky-2
+
+Changes have been made:
+	- Scaled image to size
 	
