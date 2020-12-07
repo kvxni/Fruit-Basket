@@ -4,10 +4,7 @@
 
 Version 20201206
 
-	- Improved assets
-	
-		+ Replaced backgrounds with a sky
-		
+	- Replaced backgrounds with a sky
 	- Added a grass border
 	- Added an instruction screen
 	- Added a credits screen
@@ -30,9 +27,7 @@ Version 20201128
 
 # Credits
 
-Fruit images by:
-
-Robert Brooks http://www.gamedeveloperstudio.com/graphics/ https://opengameart.org/content/fruit-icons-redo
+Fruit images by: Robert Brooks http://www.gamedeveloperstudio.com/graphics/ https://opengameart.org/content/fruit-icons-redo
 
 Changes have been made:
 
@@ -43,9 +38,7 @@ Changes have been made:
 Bomb image is public domain https://opengameart.org/content/bomb-0
 
 
-Basket image by
-
-Name by Another Rose https://opengameart.org/content/gardening-set
+Basket image by: Name by Another Rose https://opengameart.org/content/gardening-set
 
 Changes have been made:
 
@@ -56,9 +49,7 @@ Changes have been made:
 Grass image is public domain https://opengameart.org/content/grass-blades-alpha-card-texture-side-view
 
 
-Sky image by
-
-Santoniche https://opengameart.org/content/sky-2
+Sky image by: Santoniche https://opengameart.org/content/sky-2
 
 Changes have been made:
 
