@@ -41,30 +41,35 @@ public class Basket extends Actor
             Tree tree = (Tree)getWorld();
             removeTouching(Apple.class);
             tree.addScore(20);
+            Greenfoot.playSound("fruit.wav");
         }
         if (isTouching(BadLemon.class)) 
         {
             Tree tree = (Tree)getWorld();
             removeTouching(BadLemon.class);
             tree.loseLife(1);
+            Greenfoot.playSound("fruit.wav");
         }
         if (isTouching(Banana.class)) 
         {
             Tree tree = (Tree)getWorld();
             removeTouching(Banana.class);
             tree.addScore(15);
+            Greenfoot.playSound("fruit.wav");
         }
         if (isTouching(Bomb.class)) 
         {
             Tree tree = (Tree)getWorld();
             removeTouching(Bomb.class);
             tree.loseLife(2);
+            Greenfoot.playSound("bomb.wav");
         }
         if (isTouching(Cherry.class)) 
         {
             Tree tree = (Tree)getWorld();
             removeTouching(Cherry.class);
             tree.addScore(10);
+            Greenfoot.playSound("fruit.wav");
         }
     }
 }

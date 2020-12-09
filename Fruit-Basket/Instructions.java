@@ -6,24 +6,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Instructions extends Buttons
+public class Instructions extends Text
 {
     public Instructions()
     {
-        GreenfootImage intructionButton = new GreenfootImage(230,60);
-        Font adjustedFont = new Font(true,false,40);
+        GreenfootImage intructionButton = new GreenfootImage(170,60);
+        Font adjustedFont = new Font(true,false,20);
         intructionButton.setFont(adjustedFont);
         intructionButton.setColor(Color.BLACK);
-        intructionButton.drawString("Instructions",0,50);
+        intructionButton.drawString("Instructions (\"H\")",0,50);
         setImage(intructionButton);
     }
-    /**
-     * Act - do whatever the Instructions wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-        checkMouse();
-        checkClick(new InstructionScreen());
-    }    
 }

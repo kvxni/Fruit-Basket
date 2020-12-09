@@ -15,7 +15,18 @@ public class CreditScreen extends World
      */
     public CreditScreen()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        // Create a new world with 640x480 cells with a cell size of 1x1 pixels.
+        super(640, 480, 1);
+        prepare();
+    }
+    
+    private void prepare() {
+        showText("Credits:", 48, 16);
+        showText("Back (\"B\")",56,450);
+    }
+    
+    public void act() {
+        if (Greenfoot.isKeyDown("B"))
+            Greenfoot.setWorld(new StartScreen());
     }
 }
