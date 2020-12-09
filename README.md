@@ -4,7 +4,9 @@ Fruit Basket is a game where you collect as many points as possible while avoidi
 ruins your basket, such as rotten lemons and BOMBS!
 
 Move with the "A" and "D" keys, left and right respectively.
+
 Hold shift for a speed boost.
+
 Have fun.
 
 ## Fruit Basket is a game made for a Game Programming project.
