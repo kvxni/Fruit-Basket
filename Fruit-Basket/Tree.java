@@ -61,6 +61,7 @@ public class Tree extends World
         addObject(grass,320,440);
         Leaves leaves = new Leaves();
         addObject(leaves,320,20);
+        addObject(new Bird(),60,60);
     }
     
     /**
