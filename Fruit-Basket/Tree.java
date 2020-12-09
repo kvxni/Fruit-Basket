@@ -23,7 +23,8 @@ public class Tree extends World
         lives = 10;
         showScore();
         showLives();
-        setPaintOrder(Grass.class);
+        setPaintOrder(Leaves.class, Grass.class);
+    
     }
     
     /**
@@ -58,6 +59,8 @@ public class Tree extends World
         addObject(basket,70,400);
         Grass grass = new Grass();
         addObject(grass,320,440);
+        Leaves leaves = new Leaves();
+        addObject(leaves,320,20);
     }
     
     /**
