@@ -22,6 +22,9 @@ public class CreditScreen extends World
     
     private void prepare() {
         showText("Credits:", 48, 16);
+        showText("Fruit Basket is a game for a project in Game Programming.", 312, 40);
+        showText("Made by Alex Nguyen & Kevin Judal.", 214, 70);
+        showText("For information about the assets, check the README file.", 306, 100);
         showText("Back (\"B\")",56,450);
     }
     
