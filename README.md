@@ -11,6 +11,11 @@ Have fun.
 
 ## Fruit Basket is a game made for a Game Programming project.
 
+Version 20201209
+
+	- Added a bird
+	- Added animation
+
 Version 20201208
 	
 	- Added leaves
@@ -51,7 +56,7 @@ Fruit images by: Robert Brooks http://www.gamedeveloperstudio.com/graphics/ http
 
 Changes have been made:
 
-	- Descaled images
+	- Scaled images to size
 	- Modified the lemon to make it look rotten
 	
 
@@ -62,7 +67,7 @@ Basket image by: Name by Another Rose https://opengameart.org/content/gardening-
 
 Changes have been made:
 
-	- Descaled image
+	- Scaled image to size
 	- Modified the basket a bit
 	
 	
@@ -81,7 +86,7 @@ Tree  and leaves image by: Outty https://opengameart.org/content/3-trees-sizes-i
 
 Changes have been made:
 
-	- Scanled image to size
+	- Scaled image to size
 	- Modified it
 	
 	
