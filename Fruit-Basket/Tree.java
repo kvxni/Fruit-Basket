@@ -23,7 +23,10 @@ public class Tree extends World
         lives = 10;
         showScore();
         showLives();
+<<<<<<< HEAD
         addObject(new Bird(),60,60);
+=======
+>>>>>>> 3a816b133398dfcc1612540b0f703892760a8f47
         setPaintOrder(Leaves.class, Grass.class);
     
     }
@@ -62,6 +65,10 @@ public class Tree extends World
         addObject(grass,320,440);
         Leaves leaves = new Leaves();
         addObject(leaves,320,20);
+<<<<<<< HEAD
+=======
+        addObject(new Bird(),60,60);
+>>>>>>> 3a816b133398dfcc1612540b0f703892760a8f47
     }
     
     /**

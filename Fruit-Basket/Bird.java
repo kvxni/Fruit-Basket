@@ -8,15 +8,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bird extends Actor
 {
-    private GreenfootImage [] images = new GreenfootImage[4];
+    private GreenfootImage [] image = new GreenfootImage[4];
     private int frame = 10, num = 0, speed = 75;
+    private boolean isAtRight;
     
     public void addedToWorld(World Tree)
     {
-       for (int i = 0; i < images.length; i++) {
-            images[i] = new GreenfootImage("bird" + i +".png");
+        for (int i = 0; i < image.length; i++) {
+            image[i] = new GreenfootImage("bird" + i +".png");
+        }
+        flip();
+    }
+    
+    public void flip()
+    {
+        for (GreenfootImage images : image) {
+            images.mirrorHorizontally();
        }
-        setImage(images[0]);
+       
     }
     
     /**
@@ -25,12 +34,33 @@ public class Bird extends Actor
      */
     public void act() 
     {
+        if (isAtEdge() ) { 
+            if (getX() >= 639) {
+                setLocation(638,getY());
+                isAtRight = false;
+            } else if (getX() <= 0){
+                setLocation(1,getY());
+                isAtRight = true;
+            }
+            flip();
+        }
+        anims();
+        animsR();
+    }    
+    
+    /**
+     * Animation of the bird.
+     */
+    public void anims() {
+        if (!isAtRight){
+            return;
+        }
         if (frame == 0)
             frame=10;
         if (frame == 1) {
-            setImage(images[num]);
+            setImage(image[num]);
             num++;
-            if (num >= images.length)
+            if (num >= image.length)
                 num=0;
             setLocation(getX()+speed, getY());
             if (getX()>getWorld().getWidth()+100)
@@ -38,5 +68,27 @@ public class Bird extends Actor
         }
         if (frame>0)
             frame--;
-    }    
+    }
+    
+    /**
+     * Animation of the bird.
+     */
+    public void animsR() {
+        if (isAtRight){
+            return;
+        }
+        if (frame == 0)
+            frame=10;
+        if (frame == 1) {
+            setImage(image[num]);
+            num++;
+            if (num >= image.length)
+                num=0;
+            setLocation(getX()-speed, getY());
+            if (getX()>getWorld().getWidth()+100)
+                setLocation(100,getY());
+        }
+        if (frame>0)
+            frame--;
+    }
 }
