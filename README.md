@@ -11,8 +11,8 @@ Have fun.
 
 ## Fruit Basket is a game made for a Game Programming project.
 
-Version 20201213
-	-Added documentation
+Version 20201214
+	-Added documentaion
 
 Version 20201213
 	
