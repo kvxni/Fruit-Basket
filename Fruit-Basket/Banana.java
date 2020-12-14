@@ -15,10 +15,28 @@ public class Banana extends Actor
      */
     public void act() 
     {
-        setLocation(getX(), getY() + speed);
-        if (getY() == 479) {
-            Tree tree = (Tree)getWorld();
-            tree.removeObject(this);
+        if (getWorld() instanceof Level1) {
+            setLocation(getX(), getY() + speed);
+            if (getY() == 479) {
+                Level1 level1 = (Level1)getWorld();
+                level1.removeObject(this);
+            }
+        }
+        
+        if (getWorld() instanceof Level2) {
+            setLocation(getX(), getY() + speed);
+            if (getY() == 479) {
+                Level2 level2 = (Level2)getWorld();
+                level2.removeObject(this);
+            }
+        }
+        
+        if (getWorld() instanceof Level3) {
+            setLocation(getX(), getY() + speed);
+            if (getY() == 479) {
+                Level3 level3 = (Level3)getWorld();
+                level3.removeObject(this);
+            }
         }
     }    
         

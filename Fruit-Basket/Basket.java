@@ -36,41 +36,72 @@ public class Basket extends Actor
      */
     private void checkCollision()
     {
-        if (isTouching(Apple.class)) 
-        {
-            Tree tree = (Tree)getWorld();
-            removeTouching(Apple.class);
-            tree.addScore(20);
-            Greenfoot.playSound("fruit.wav");
+        if (getWorld() instanceof Level1 ) {
+            if (isTouching(Apple.class)) {
+                Level1 level1 = (Level1)getWorld();
+                removeTouching(Apple.class);
+                level1.addScore(20);
+                Greenfoot.playSound("fruit.wav");
+           }
+           if (isTouching(BadLemon.class)) {
+               Level1 level1 = (Level1)getWorld();
+               removeTouching(BadLemon.class);
+               level1.loseLife(1);
+               Greenfoot.playSound("fruit.wav");
+           }
+           if (isTouching(Banana.class)) {
+                Level1 level1 = (Level1)getWorld();
+                removeTouching(Banana.class);
+                level1.addScore(15);
+                Greenfoot.playSound("fruit.wav");
+           }
+           if (isTouching(Bomb.class)) {
+               Level1 level1 = (Level1)getWorld();
+                removeTouching(Bomb.class);
+                level1.loseLife(2);
+                Greenfoot.playSound("bomb.wav");
+            }
+           if (isTouching(Cherry.class)) {
+               Level1 level1 = (Level1)getWorld();
+               removeTouching(Cherry.class);
+               level1.addScore(10);
+               Greenfoot.playSound("fruit.wav");
+            } 
         }
-        if (isTouching(BadLemon.class)) 
-        {
-            Tree tree = (Tree)getWorld();
-            removeTouching(BadLemon.class);
-            tree.loseLife(1);
-            Greenfoot.playSound("fruit.wav");
-        }
-        if (isTouching(Banana.class)) 
-        {
-            Tree tree = (Tree)getWorld();
-            removeTouching(Banana.class);
-            tree.addScore(15);
-            Greenfoot.playSound("fruit.wav");
-        }
-        if (isTouching(Bomb.class)) 
-        {
-            Tree tree = (Tree)getWorld();
-            removeTouching(Bomb.class);
-            tree.loseLife(2);
-            Greenfoot.playSound("bomb.wav");
-        }
-        if (isTouching(Cherry.class)) 
-        {
-            Tree tree = (Tree)getWorld();
-            removeTouching(Cherry.class);
-            tree.addScore(10);
-            Greenfoot.playSound("fruit.wav");
+        
+        if (getWorld() instanceof Level2 ) {
+            if (isTouching(Apple.class)) {
+                Level2 level2 = (Level2)getWorld();
+                removeTouching(Apple.class);
+                level2.addScore(20);
+                Greenfoot.playSound("fruit.wav");
+           }
+           if (isTouching(BadLemon.class)) {
+               Level2 level2 = (Level2)getWorld();
+               removeTouching(BadLemon.class);
+               level2.loseLife(1);
+               Greenfoot.playSound("fruit.wav");
+           }
+           if (isTouching(Banana.class)) {
+               Level2 level2 = (Level2)getWorld();
+               removeTouching(Banana.class);
+               level2.addScore(15);
+               Greenfoot.playSound("fruit.wav");
+           }
+           if (isTouching(Bomb.class)) {
+               Level2 level2 = (Level2)getWorld();
+               removeTouching(Bomb.class);
+               level2.loseLife(2);
+               Greenfoot.playSound("bomb.wav");
+            }
+           if (isTouching(Cherry.class)) {
+               Level2 level2 = (Level2)getWorld();
+               removeTouching(Cherry.class);
+               level2.addScore(10);
+               Greenfoot.playSound("fruit.wav");
+            } 
         }
     }
 }
+
     

@@ -19,12 +19,11 @@ public class StartScreen extends World
         super(640, 480, 1);
         prepare();
         Greenfoot.start();
-        
     }
     
     public void act() {
         if (Greenfoot.isKeyDown("S")) 
-            Greenfoot.setWorld(new Tree());
+            Greenfoot.setWorld(new LevelStart(1,0,10));
         if (Greenfoot.isKeyDown("H")) 
             Greenfoot.setWorld(new InstructionScreen());
         if (Greenfoot.isKeyDown("C")) 
@@ -41,5 +40,13 @@ public class StartScreen extends World
         addObject(intructions,320,280);
         Credits credits = new Credits();
         addObject(credits,320,320);
+        introductions();
+    }
+    
+    public void introductions(){
+        showText("Alex Nguyen & Kevin Judal",getWidth()/2,400);
+        showText("Game Programming 1",getWidth()/2,420);
+        showText("Fall 2020",getWidth()/2,440);
+        showText("Tassia Araujo",getWidth()/2,460);
     }
 }

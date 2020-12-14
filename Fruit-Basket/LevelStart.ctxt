@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=LevelStart
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Level1Start\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=level\ score\ lives
+comment1.target=LevelStart(int,\ int,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Level1Start.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ intro()
+numComments=4

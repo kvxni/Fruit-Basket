@@ -7,20 +7,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Alex & Kevin 
  * @version v1.0
  */
-public class Tree extends World
+public class Level3 extends World
 {
     private int score;
     private int lives;
     
+    
     /**
      * Constructor for objects of class Tree.
      */
-    public Tree()
+    public Level3(int score, int lives)
     {    
         super(640, 480, 1); 
         prepare();
-        score = 0;
-        lives = 10;
+        this.score = score;
+        this.lives = lives;
         showScore();
         showLives();
         addObject(new Bird(),60,60);
@@ -47,6 +48,7 @@ public class Tree extends World
             
         if (Greenfoot.getRandomNumber(120) < 1)
             addObject(new Bomb(), Greenfoot.getRandomNumber(640), 1);
+            
     }
 
     /**
@@ -62,6 +64,7 @@ public class Tree extends World
         Leaves leaves = new Leaves();
         addObject(leaves,320,20);
         addObject(new Bird(),60,60);
+        showText("Level 3",600, 14);
     }
     
     /**
