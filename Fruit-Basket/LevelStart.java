@@ -56,7 +56,7 @@ public class LevelStart extends World
             showText("Earn " + minScore + " points to move to the next level.", getWidth()/2, getHeight()/2+20);
             showText("Avoid the lemon and the bomb.",getWidth()/2, getHeight()/2+40);
         } else {
-            showText("Level " + level, getWidth()/2, getHeight()/2);
+            showText("Level " + level + "(Extra)", getWidth()/2, getHeight()/2);
             showText("Earn as much points as you can.", getWidth()/2, getHeight()/2+20);
             showText("Avoid the lemon and the bomb.",getWidth()/2, getHeight()/2+40);
         }

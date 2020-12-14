@@ -7,9 +7,10 @@ public class Level3 extends World
 {
     private int score;
     private int lives;
+    private static int i = Level2.getI();
     
     /**
-     * Constructor for objects of class Tree.
+     * Constructor for objects of class Level3.
      */
     public Level3(int score, int lives)
     {    
@@ -44,6 +45,10 @@ public class Level3 extends World
         if (Greenfoot.getRandomNumber(120) < 1)
             addObject(new Bomb(), Greenfoot.getRandomNumber(640), 1);
             
+        if (score / 100 == i) {
+            addLives(5);
+            i++;
+        }
     }
 
     /**
@@ -69,6 +74,15 @@ public class Level3 extends World
     public void addScore(int points) {
         score += points;
         showScore();
+    }
+    
+    /**
+     * Adds lives to the lives counter.
+     * @params life The amount of lives.
+     */
+    public void addLives(int life) {
+        lives += life;
+        showLives();
     }
     
     /**
@@ -99,11 +113,10 @@ public class Level3 extends World
     {
         showText("Lives: " + lives, 46, 34);
     }
-
     /**
-     * Returns the score.
+     * Returns the i;
      */
-    public int getScore() {
-        return score;
+    public static int getI() {
+        return i;
     }
 }

@@ -101,6 +101,39 @@ public class Basket extends Actor
                Greenfoot.playSound("fruit.wav");
             } 
         }
+        
+        if (getWorld() instanceof Level3 ) {
+            if (isTouching(Apple.class)) {
+                Level3 level3 = (Level3)getWorld();
+                removeTouching(Apple.class);
+                level3.addScore(20);
+                Greenfoot.playSound("fruit.wav");
+           }
+           if (isTouching(BadLemon.class)) {
+               Level3 level3 = (Level3)getWorld();
+               removeTouching(BadLemon.class);
+               level3.loseLife(1);
+               Greenfoot.playSound("fruit.wav");
+           }
+           if (isTouching(Banana.class)) {
+               Level3 level3 = (Level3)getWorld();
+               removeTouching(Banana.class);
+               level3.addScore(15);
+               Greenfoot.playSound("fruit.wav");
+           }
+           if (isTouching(Bomb.class)) {
+               Level3 level3 = (Level3)getWorld();
+               removeTouching(Bomb.class);
+               level3.loseLife(2);
+               Greenfoot.playSound("bomb.wav");
+            }
+           if (isTouching(Cherry.class)) {
+               Level3 level3 = (Level3)getWorld();
+               removeTouching(Cherry.class);
+               level3.addScore(10);
+               Greenfoot.playSound("fruit.wav");
+            } 
+        }
     }
 }
 

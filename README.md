@@ -13,13 +13,15 @@ Have fun.
 
 Version 20201214
 	
-	-Added documentaion
+	- Added documentaion
+	- Fixed collision on the third level.
+	- Added a way to get more lives.
 
 Version 20201213
 	
-	-Added 3 levels
-	-Added a screen indicating the level
-	-Increased the difficulty in each level
+	- Added 3 levels
+	- Added a screen indicating the level
+	- Increased the difficulty in each level
 	
 Version 20201209
 

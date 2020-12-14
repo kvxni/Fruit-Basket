@@ -1,15 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Level 2 of Fruit Basket
+ * Level 2 of Fruit Basket.
  */
 public class Level2 extends World
 {
     private int score;
     private int lives;
+    private static int i = Level1.getI();
     
     /**
-     * Constructor for objects of class Tree.
+     * Constructor for objects of class Level2.
      */
     public Level2(int score, int lives)
     {    
@@ -46,6 +47,11 @@ public class Level2 extends World
         
         if (score >= 1000) 
             Greenfoot.setWorld(new LevelStart(3,score,lives));
+            
+        if (score / 100 == i) {
+            addLives(2);
+            i++;
+        }
     }
 
     /**
@@ -71,6 +77,15 @@ public class Level2 extends World
     public void addScore(int points) {
         score += points;
         showScore();
+    }
+    
+    /**
+     * Adds lives to the lives counter.
+     * @params life The amount of lives.
+     */
+    public void addLives(int life) {
+        lives += life;
+        showLives();
     }
     
     /**
@@ -101,11 +116,11 @@ public class Level2 extends World
     {
         showText("Lives: " + lives, 46, 34);
     }
-
+    
     /**
-     * Returns the score.
+     * Returns the i;
      */
-    public int getScore() {
-        return score;
+    public static int getI() {
+        return i;
     }
 }

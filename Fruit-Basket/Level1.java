@@ -7,9 +7,10 @@ public class Level1 extends World
 {
     private int score;
     private int lives;
+    private static int i = 1;
     
     /**
-     * Constructor for objects of class Tree.
+     * Constructor for objects of class Level1.
      */
     public Level1()
     {    
@@ -44,11 +45,15 @@ public class Level1 extends World
         if (Greenfoot.getRandomNumber(120) < 1)
             addObject(new Bomb(), Greenfoot.getRandomNumber(640), 1);
         
-        if (score >= 500) {
+        if (score >= 500)
             Greenfoot.setWorld(new LevelStart(2, score, lives));
-         }
+            
+        if (score / 100 == i) {
+            addLives(1);
+            i++;
+        }
     }
-
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -73,6 +78,15 @@ public class Level1 extends World
         score += points;
         showScore();
     }  
+    
+    /**
+     * Adds lives to the lives counter.
+     * @params life The amount of lives.
+     */
+    public void addLives(int life) {
+        lives += life;
+        showLives();
+    }
     
     /**
      * Substracts life to the lives 
@@ -102,11 +116,11 @@ public class Level1 extends World
     {
         showText("Lives: " + lives, 46, 34);
     }
-
+    
     /**
-     * Returns the score.
+     * Returns the i;
      */
-    public int getScore() {
-        return score;
+    public static int getI() {
+        return i;
     }
 }
