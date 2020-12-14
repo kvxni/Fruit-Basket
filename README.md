@@ -15,6 +15,7 @@ Version 20201213
 	
 	-Added 3 levels
 	-Added a screen indicating the level
+	-Increased the difficulty in each level
 	
 Version 20201209
 
