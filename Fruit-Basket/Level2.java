@@ -1,17 +1,12 @@
-
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Tree here.
- * 
- * @author Alex & Kevin 
- * @version v1.0
+ * Level 2 of Fruit Basket
  */
 public class Level2 extends World
 {
     private int score;
     private int lives;
-    
     
     /**
      * Constructor for objects of class Tree.
@@ -107,6 +102,9 @@ public class Level2 extends World
         showText("Lives: " + lives, 46, 34);
     }
 
+    /**
+     * Returns the score.
+     */
     public int getScore() {
         return score;
     }

@@ -40,10 +40,16 @@ public class BadLemon extends Actor
         }
     }    
         
+    /**
+     * Returns the speed.
+     */
     public int getSpeed() {
         return speed;
     }
     
+    /**
+     * Sets the speed.
+     */
     public void setSpeed(int speed) {
         this.speed = speed;
     }

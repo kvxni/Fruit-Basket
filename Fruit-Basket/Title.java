@@ -1,13 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Title here.
+ * Fruit Basket
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Kevin Judal & Alex Nguyen) 
+ * @version (20201214)
  */
 public class Title extends Text
 {
+    /**
+     * Constructor of the title.
+     */
     public Title() {
         GreenfootImage creditsButton = new GreenfootImage(400,90);
         Font adjustedFont = new Font(true,false,70);

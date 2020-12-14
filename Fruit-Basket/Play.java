@@ -1,13 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Play here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Starts the game.
  */
 public class Play extends Text
 {
+    /**
+     * Constructor of the Play button.
+     */
     public Play()
     {
         GreenfootImage playButton = new GreenfootImage(120,60);

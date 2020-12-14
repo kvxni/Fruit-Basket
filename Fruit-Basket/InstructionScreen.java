@@ -1,19 +1,24 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+/**
+ * Instruction Screen.
+ */
 public class InstructionScreen extends World
 {
-
     /**
      * Constructor for objects of class InstructionScreen.
      * 
      */
     public InstructionScreen()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(640, 480, 1);
         prepare();
     }
     
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
     private void prepare() {
         showText("How to play:", 64, 16);
         showText("- Move with the \"A\" and \"D\" keys.", 180, 44);
@@ -24,6 +29,10 @@ public class InstructionScreen extends World
         showText("Back (\"B\")", 56, 450);
     }
     
+    /**
+     * Act - do whatever the Tree wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() {
         if (Greenfoot.isKeyDown("B"))
             Greenfoot.setWorld(new StartScreen());

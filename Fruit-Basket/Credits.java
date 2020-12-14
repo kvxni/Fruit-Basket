@@ -1,13 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Credits here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Credits screen.
  */
 public class Credits extends Text
 {
+    /**
+     * Constructor of the Credit screen.
+     */
     public Credits()
     {
         GreenfootImage creditsButton = new GreenfootImage(120,60);

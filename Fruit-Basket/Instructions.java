@@ -1,13 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Instructions here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Instruction screen.
  */
 public class Instructions extends Text
 {
+    /**
+     * Constructor of the Introduction Screen.
+     */
     public Instructions()
     {
         GreenfootImage intructionButton = new GreenfootImage(170,60);

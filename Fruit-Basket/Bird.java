@@ -12,6 +12,9 @@ public class Bird extends Actor
     private int frame = 10, num = 0, speed = 75;
     private boolean isAtRight;
     
+    /**
+     * Adds the bird to the World
+     */
     public void addedToWorld(World Tree)
     {
         for (int i = 0; i < image.length; i++) {
@@ -20,6 +23,9 @@ public class Bird extends Actor
         flip();
     }
     
+    /**
+     * Flips the bird.
+     */
     public void flip()
     {
         for (GreenfootImage images : image) {

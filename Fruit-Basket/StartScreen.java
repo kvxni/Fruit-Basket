@@ -21,6 +21,10 @@ public class StartScreen extends World
         Greenfoot.start();
     }
     
+    /**
+     * Act - do whatever the Apple wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() {
         if (Greenfoot.isKeyDown("S")) 
             Greenfoot.setWorld(new LevelStart(1,0,10));
@@ -30,6 +34,10 @@ public class StartScreen extends World
             Greenfoot.setWorld(new CreditScreen());
     }
     
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
     private void prepare()
     {
         Title title = new Title();
@@ -43,6 +51,10 @@ public class StartScreen extends World
         introductions();
     }
     
+    /**
+     * Introduction of the authors, the course name, the school year,
+     * and the professor.
+     */
     public void introductions(){
         showText("Alex Nguyen & Kevin Judal",getWidth()/2,400);
         showText("Game Programming 1",getWidth()/2,420);

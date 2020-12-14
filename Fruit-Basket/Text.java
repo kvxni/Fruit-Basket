@@ -1,11 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Buttons here.
- * 
- * @author Alex & Kevin
- * @version (a version number or a date)
+ * Texts of the Fruit Basket
  */
 public class Text extends Actor
 {
+    
 }

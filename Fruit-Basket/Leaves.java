@@ -1,10 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Leaves here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ *  Leaves.
  */
 public class Leaves extends Actor
 {
@@ -14,6 +11,6 @@ public class Leaves extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        
     }    
 }

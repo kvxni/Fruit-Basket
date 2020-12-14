@@ -18,7 +18,6 @@ public class LevelStart extends World
      */
     public LevelStart(int level, int score, int lives)
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(640, 480, 1);
         this.level = level;
         this.score = score;
@@ -26,6 +25,10 @@ public class LevelStart extends World
         intro();
     }
     
+    /**
+     * Act - do whatever the Apple wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() {
         Greenfoot.delay(200);
         if (level == 1) {
@@ -37,6 +40,9 @@ public class LevelStart extends World
         }
     }
     
+    /**
+     * Introduction of the levels and its goals.
+     */
     public void intro() {
         int minScore = 0;
         switch (level) {

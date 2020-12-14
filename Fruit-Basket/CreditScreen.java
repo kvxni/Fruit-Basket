@@ -1,14 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class CreditScreen here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Credit screen.
  */
 public class CreditScreen extends World
 {
-
     /**
      * Constructor for objects of class CreditScreen.
      * 
@@ -20,6 +16,10 @@ public class CreditScreen extends World
         prepare();
     }
     
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
     private void prepare() {
         showText("Credits:", 48, 16);
         showText("Fruit Basket is a game for a project in Game Programming.", 312, 40);
@@ -28,6 +28,10 @@ public class CreditScreen extends World
         showText("Back (\"B\")",56,450);
     }
     
+    /**
+     * Act - do whatever the Tree wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() {
         if (Greenfoot.isKeyDown("B"))
             Greenfoot.setWorld(new StartScreen());

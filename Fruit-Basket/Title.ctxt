@@ -1,6 +1,7 @@
 #BlueJ class context
 comment0.target=Title
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Title\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Fruit\ Basket\r\n\ \r\n\ @author\ (Kevin\ Judal\ &\ Alex\ Nguyen)\ \r\n\ @version\ (20201214)\r\n
 comment1.params=
 comment1.target=Title()
+comment1.text=\r\n\ Constructor\ of\ the\ title.\r\n
 numComments=2
