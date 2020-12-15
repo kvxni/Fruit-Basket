@@ -26,6 +26,7 @@ public class CreditScreen extends World
         showText("Made by Alex Nguyen & Kevin Judal.", 214, 70);
         showText("For information about the assets, check the README file.", 306, 100);
         showText("Back (\"B\")",56,450);
+        showText("License: MIT License",520,450);
     }
     
     /**
